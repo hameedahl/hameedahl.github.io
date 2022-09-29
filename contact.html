@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="rose_favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55d0223fcd.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(background.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!-- Nav Bar -->
+    <div class="header">
+        <div class="nav_bar">
+            <div class="nav_links" id="links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li class="nav_btn"><a href="index.html">Home</a></li>
+                    <li class="nav_btn"><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+
+<!-- Header and Content -->
+    <div class="contact">
+        <div class="contact_title">
+            <h1>How to Contact Us:</h1> 
+        </div>
+            <div class="contact_1">
+                <h3>Let us Reach you!</h3>
+                    <form>
+                        <label>Name:</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <label>Email:</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <label>Phone Number:</label>
+                        <input type="tel" name="" id="">
+                        <br>
+                        <label>Questions:</label>
+                        <br>
+                        <textarea></textarea>
+                    <input type="submit" name="" id="submit" value="Send Request">
+
+                    </form>
+                    <h4>We'll give you a call or send <br> an email to answer any of your questions!</h4>
+                    <h6>Please allow 1 business day before submitting another request</h6>
+            </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="contact_footer">
+    <h4> <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>  
+        <i class="fa-brands fa-square-instagram"></i> @faysflowers 
+        | 88 Meadow Ave New York, NY |<br>| Phone: 123-456-7890 
+        | Email: faysflowers@gmail.com | <br>| &copy;Fay's Flowers 2022 | </h4>
+</div>
+
+
+<!-- JS for menu -->
+<script>
+    var navBar = document.getElementById("links");
+    function showMenu() {
+        navBar.style.right= "0";
+    }
+    function hideMenu() {
+        navBar.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>

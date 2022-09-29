@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="rose_favicon.ico" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Our Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55d0223fcd.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(background.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="nav_bar">
+            <div class="nav_links" id="links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="nav_btn"><a href="contact.html">Contact</a></li>
+                    <li class="nav_btn"><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+
+
+        <div class="">
+            <div class="contact_title">
+                <h1>What We Offer:</h1>
+            </div>
+
+            <table class="service_table">
+                <tr>
+                    <td class="service_header">Venue Decorations</td>
+                    <td class="service_header">Flower Arrangements</td>
+                    <td class="service_header">Many More...</td>
+                </tr>
+                <tr>
+                    <td class="service_pic"><img class="s_pic" src="service1.jpg" alt=""></td>
+                    <td class="service_pic"><img class="s_pic" src="service2.jpg" alt=""></td>
+                    <td class="service_pic"><img class="s_pic" src="service3.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="service_sum">For wedding halls, to office spaces! <br> You name and we got you covered</td>
+                    <td class="service_sum">Choose from a varity of flowers <br> and make the perfect gift!</td>
+                    <td class="service_sum">On the creative side? <br> Find out how to share ideas below!</td>
+                </tr>
+        </div>
+        <div class="service_footer">
+            <h4> <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>  
+                <i class="fa-brands fa-square-instagram"></i> @faysflowers 
+                | 88 Meadow Ave New York, NY |<br>| Phone: 123-456-7890 
+                | Email: faysflowers@gmail.com | <br>| &copy;Fay's Flowers 2022 | </h4>
+        </div>
+        
+</div>
+
+<!-- Footer -->
+
+<!-- JS for menu -->
+<script>
+    var navBar = document.getElementById("links");
+    function showMenu() {
+        navBar.style.right= "0";
+    }
+    function hideMenu() {
+        navBar.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
